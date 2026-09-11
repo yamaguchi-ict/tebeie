@@ -106,15 +106,15 @@
             background-color: #006699;
         }
 
-        /* === YAMAPARK 動線セクション（下部配置用） === */
+        /* === YAMAPARK 動線セクション === */
         .yamapark-section {
-            background-color: #fff8e1; /* 薄いオレンジ背景 */
+            background-color: #fff8e1;
             border-radius: 8px;
             padding: 40px 20px;
-            margin-top: 60px; /* ギャラリーとの間隔 */
-            margin-bottom: 20px;
+            margin-top: 60px;
+            margin-bottom: 60px;
             text-align: center;
-            border: 2px solid #ffcc80; /* オレンジ枠線 */
+            border: 2px solid #ffcc80;
         }
         .yamapark-section h2 {
             color: #e65100;
@@ -146,12 +146,74 @@
             font-weight: bold;
         }
 
+        /* === 関連コンテストセクション（新規追加） === */
+        .contest-section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .contest-section-title-wrapper {
+            text-align: center;
+        }
+        .contest-section h2 {
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ccc;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .contest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .contest-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .contest-card h3 {
+            color: #0088cc;
+            font-size: 1.2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .contest-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+        .btn-contest {
+            display: inline-block;
+            background-color: #0088cc;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .btn-contest:hover {
+            background-color: #006699;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: #fff;
-            margin-top: 40px;
+            margin-top: 60px;
             font-size: 0.9rem;
         }
     </style>
@@ -167,7 +229,7 @@
     
     <!-- 個別ゲームギャラリー -->
     <div class="section-title-wrapper">
-        <h2 class="section-title">優秀作品ピックアップ　たべのいえ特別バーション</h2>
+        <h2 class="section-title">優秀作品ピックアップ</h2>
     </div>
     
     <div class="grid">
@@ -302,6 +364,26 @@
             テーマは当日まで秘密。会場で初めて回された<span class="highlight">「テーマ決定ルーレット」</span>から、<br>参加者一人ひとりがお題を引き、その瞬間からアイデアと創造力を武器に開発へ挑みました。
         </p>
         <a href="https://yamaguchi-ict.github.io/yamapark_yjpc/" class="btn-yamapark" target="_blank" rel="noopener">🎡 YAMAPARKに遊びに行く！</a>
+    </div>
+
+    <!-- 関連コンテストセクション（新規追加） -->
+    <div class="contest-section">
+        <div class="contest-section-title-wrapper">
+            <h2>関連サイトのご案内</h2>
+        </div>
+        <div class="contest-grid">
+            <div class="contest-card">
+                <h3>やまぐち<br>ジュニアプログラマーコンテスト</h3>
+                <p>山口県内の小・中学生を対象としたプログラミングコンテスト。子どもたちの「好き」を伸ばし、自由な発想（トンガリ）を応援します。</p>
+                <a href="https://jrp.yamaguchi-ict.info/" class="btn-contest" target="_blank" rel="noopener">公式サイトを見る</a>
+            </div>
+            
+            <div class="contest-card">
+                <h3>やまぐち<br>U-18デジタルアートコンテスト</h3>
+                <p>山口県内の18歳以下を対象としたデジタルアートコンテスト。CG、イラスト、動画など、デジタル技術を使った表現の場を提供します。</p>
+                <a href="https://art.yamaguchi-ict.info/" class="btn-contest" target="_blank" rel="noopener">公式サイトを見る</a>
+            </div>
+        </div>
     </div>
 
 </div>
