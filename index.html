@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>やまぐちジュニアプログラマーコンテスト 優秀作品集 & YAMAPARK</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0088cc;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        /* === ギャラリー見出し === */
+        .section-title-wrapper {
+            text-align: center;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #0088cc;
+            border-bottom: 2px solid #0088cc;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* === カードグリッド === */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        .card-img-wrapper {
+            position: relative;
+            padding-top: 75%;
+        }
+        .card-img-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0 0 15px 0;
+            line-height: 1.4;
+            flex-grow: 1;
+        }
+        .btn {
+            display: block;
+            text-align: center;
+            background-color: #0088cc;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #006699;
+        }
+
+        /* === YAMAPARK 動線セクション（下部配置用） === */
+        .yamapark-section {
+            background-color: #fff8e1; /* 薄いオレンジ背景 */
+            border-radius: 8px;
+            padding: 40px 20px;
+            margin-top: 60px; /* ギャラリーとの間隔 */
+            margin-bottom: 20px;
+            text-align: center;
+            border: 2px solid #ffcc80; /* オレンジ枠線 */
+        }
+        .yamapark-section h2 {
+            color: #e65100;
+            margin-top: 0;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        .yamapark-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #4e342e;
+        }
+        .btn-yamapark {
+            display: inline-block;
+            background-color: #ff8f00;
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .btn-yamapark:hover {
+            background-color: #ff6f00;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>やまぐちジュニアプログラマーコンテスト</h1>
+    <p>きみの「好き」が最高の武器になる。</p>
+</header>
+
+<div class="container">
+    
+    <!-- 個別ゲームギャラリー -->
+    <div class="section-title-wrapper">
+        <h2 class="section-title">優秀作品ピックアップ　たべのいえ特別バーション</h2>
+    </div>
+    
+    <div class="grid">
+        <!-- ぎおんしょうじゃのかねのこえ -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/1067916661_480x360.png" alt="ぎおんしょうじゃのかねのこえ">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">ぎおんしょうじゃのかねのこえ</h2>
+                <a href="https://scratch.mit.edu/projects/1067916661/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- どれかな？どれかな？モルモット探しゲーム -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/884307139_480x360.png" alt="どれかな？どれかな？モルモット探しゲーム">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">どれかな？どれかな？モルモット探しゲーム</h2>
+                <a href="https://scratch.mit.edu/projects/884307139/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- モルモットレース -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/879068189_480x360.png" alt="モルモットレース">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">モルモットレース</h2>
+                <a href="https://scratch.mit.edu/projects/879068189/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- 風船ピッタリゲーム -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/1056939606_480x360.png" alt="風船ピッタリゲーム">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">風船ピッタリゲーム</h2>
+                <a href="https://scratch.mit.edu/projects/1056939606/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- トルコアイス頭 -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/1210869634_480x360.png" alt="トルコアイス頭">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">トルコアイス頭</h2>
+                <a href="https://scratch.mit.edu/projects/1210869634/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- トビミチ（リミックス版） -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/1380063203_480x360.png" alt="トビミチ（リミックス版）">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">トビミチ（リミックス版）</h2>
+                <a href="https://scratch.mit.edu/projects/1380063203/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- マスネコ -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/950714632_480x360.png" alt="マスネコ">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">マスネコ</h2>
+                <a href="https://scratch.mit.edu/projects/950714632/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- ハンバーグ焼きゲーム remix -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/1380066096_480x360.png" alt="ハンバーグ焼きゲーム remix">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">ハンバーグ焼きゲーム remix</h2>
+                <a href="https://scratch.mit.edu/projects/1380066096/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- CATがホームランを打つゲーム -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/961009435_480x360.png" alt="CATがホームランを打つゲーム">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">CATがホームランを打つゲーム</h2>
+                <a href="https://scratch.mit.edu/projects/961009435/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- アイス キャッチ -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/918926202_480x360.png" alt="アイス キャッチ">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">アイス キャッチ</h2>
+                <a href="https://scratch.mit.edu/projects/918926202/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+
+        <!-- xpuresu（リミックス版） -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://uploads.scratch.mit.edu/get_image/project/1380065015_480x360.png" alt="xpuresu（リミックス版）">
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">xpuresu（リミックス版）</h2>
+                <a href="https://scratch.mit.edu/projects/1380065015/embed" class="btn" target="_blank" rel="noopener">あそぶ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- YAMAPARK 動線・説明セクション -->
+    <div class="yamapark-section">
+        <h2>🎪 YAMAPARK（ヤマパーク）へようこそ！</h2>
+        <p>
+            やまぐちジュニアプログラマーコンテスト（YJPC）優秀者として集まった山口県内の小中学生12人。<br>
+            彼らが、わずか1日（3時間半）のハッカソンで創り上げたのが、このテーマパークです。<br>
+            テーマは当日まで秘密。会場で初めて回された<span class="highlight">「テーマ決定ルーレット」</span>から、<br>参加者一人ひとりがお題を引き、その瞬間からアイデアと創造力を武器に開発へ挑みました。
+        </p>
+        <a href="https://yamaguchi-ict.github.io/yamapark_yjpc/" class="btn-yamapark" target="_blank" rel="noopener">🎡 YAMAPARKに遊びに行く！</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; やまぐちジュニアプログラマーコンテスト</p>
+</footer>
+
+</body>
+</html>
